@@ -1,0 +1,38 @@
+#Question 1
+
+Question 1: Use yfinance to Extract Stock Data
+
+# Assuming 'tesla_data' is your DataFrame containing Tesla's historical data
+
+# Reset the index, modifying the DataFrame directly
+tesla_data.reset_index(inplace=True)
+
+# Display the first five rows with the new index
+print(tesla_data.head())
+
+#Question 2
+
+print(tesla_revenue.tail())
+
+#Question 3
+
+# Assuming 'gme_data' is your DataFrame containing GameStop's historical data
+
+# Reset the index, modifying the DataFrame directly
+gme_data.reset_index(inplace=True)
+
+# Display the first five rows with the new index
+print(gme_data.head())
+
+#Question 4 
+print(gme_revenue.tail())
+
+#Question 5
+
+make_graph(tesla_data, tesla_revenue, 'Tesla')
+
+#Question 6
+
+make_graph(gme_data, gme_revenue, 'GameStop')
+
+
